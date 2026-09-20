@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meet Bobo | Oriole Breeze</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Manrope',sans-serif;
+background:#F9F6F1;
+color:#4A3527;
+}
+
+
+/* NAVIGATION */
+
+nav{
+width:100%;
+padding:22px 9%;
+display:flex;
+justify-content:center;
+align-items:center;
+position:fixed;
+top:0;
+left:0;
+background:rgba(249,246,241,.92);
+backdrop-filter:blur(12px);
+z-index:1000;
+}
+
+nav ul{
+display:flex;
+gap:35px;
+align-items:center;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:#4A3527;
+font-weight:600;
+transition:.35s;
+}
+
+nav a:hover{
+color:#C8A96A;
+}
+
+
+/* BOBO HERO */
+
+.bobo-hero{
+min-height:100vh;
+padding:130px 20px 80px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:#EDE7DA;
+}
+
+.bobo-hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:78px;
+font-weight:600;
+margin-bottom:8px;
+}
+
+.bobo-subtitle{
+font-family:'Cormorant Garamond',serif;
+font-size:27px;
+font-style:italic;
+color:#7B6250;
+margin-bottom:25px;
+}
+
+.bobo-image{
+width:360px;
+height:360px;
+object-fit:contain;
+margin:0 auto 25px;
+}
+
+.bobo-intro{
+max-width:650px;
+font-size:18px;
+line-height:1.9;
+color:#6F5A4B;
+}
+
+
+/* BOBO STORY */
+
+.bobo-story{
+padding:120px 20%;
+text-align:center;
+background:#F9F6F1;
+}
+
+.bobo-story h2{
+font-family:'Cormorant Garamond',serif;
+font-size:58px;
+font-weight:600;
+margin-bottom:45px;
+}
+
+.bobo-story p{
+max-width:800px;
+margin:0 auto 28px;
+font-size:17px;
+line-height:2;
+color:#6F5A4B;
+}
+
+.bobo-story strong{
+font-family:'Cormorant Garamond',serif;
+font-size:28px;
+font-weight:600;
+color:#4A3527;
+}
+
+
+/* CLOSING */
+
+.bobo-ending{
+padding:110px 20px;
+text-align:center;
+background:#EDE7DA;
+}
+
+.bobo-ending h2{
+font-family:'Cormorant Garamond',serif;
+font-size:50px;
+font-weight:600;
+margin-bottom:15px;
+}
+
+.bobo-ending p{
+font-size:17px;
+color:#6F5A4B;
+}
+
+
+/* BACK BUTTON */
+
+.back-home{
+display:inline-block;
+margin-top:30px;
+padding:15px 38px;
+background:#C8A96A;
+color:white;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.back-home:hover{
+background:#4A3527;
+transform:translateY(-4px);
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav{
+padding:18px 15px;
+}
+
+nav ul{
+gap:14px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav a{
+font-size:13px;
+}
+
+.bobo-hero h1{
+font-size:55px;
+}
+
+.bobo-subtitle{
+font-size:22px;
+}
+
+.bobo-image{
+width:280px;
+height:280px;
+}
+
+.bobo-intro{
+font-size:16px;
+}
+
+.bobo-story{
+padding:90px 25px;
+}
+
+.bobo-story h2{
+font-size:46px;
+}
+
+.bobo-story p{
+font-size:16px;
+}
+
+.bobo-ending h2{
+font-size:40px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="index.html#collection">Collection</a></li>
+
+<li><a href="index.html#upcoming">Upcoming</a></li>
+
+<li><a href="index.html#story">Our Story</a></li>
+
+<li><a href="index.html#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<!-- BOBO HERO -->
+
+<section class="bobo-hero">
+
+<h1>Meet Bobo</h1>
+
+<p class="bobo-subtitle">
+The little oriole behind Oriole Breeze.
+</p>
+
+<img
+src="images/bobo.png"
+alt="Bobo, the Oriole Breeze oriole"
+class="bobo-image"
+>
+
+<p class="bobo-intro">
+Somewhere between the trees, the flowers, and the gentle movement
+of the breeze, there is a little golden bird.
+</p>
+
+</section>
+
+
+
+<!-- BOBO STORY -->
+
+<section class="bobo-story">
+
+<h2>The One and Only Bobo</h2>
+
+<p>
+His name is <strong>Bobo.</strong>
+</p>
+
+<p>
+He may be small, but he carries a little bit of the spirit behind
+Oriole Breeze — curious, free-spirited, and always drawn towards
+something new.
+</p>
+
+<p>
+The oriole became part of our story because of what it represents:
+nature, movement, colour, and a sense of freedom. It felt like the
+perfect little companion for a fragrance house inspired by the
+natural world.
+</p>
+
+<p>
+And then came Bobo.
+</p>
+
+<p>
+With his warm golden feathers and unmistakable presence, he became
+more than just a symbol. He became the little character who watches
+over our fragrances, travels through our pages, and quietly reminds
+us where Oriole Breeze began.
+</p>
+
+<p>
+He doesn't belong to one particular fragrance.
+</p>
+
+<p>
+<strong>He belongs to all of them.</strong>
+</p>
+
+<p>
+From a soft vanilla to a fresh morning scent, from delicate florals
+to deeper woods, Bobo is there to accompany every little journey.
+</p>
+
+<p>
+So whenever you see that golden bird...
+</p>
+
+<p>
+<strong>you'll know it's Bobo.</strong>
+</p>
+
+</section>
+
+
+
+<!-- CLOSING -->
+
+<section class="bobo-ending">
+
+<h2>The little oriole behind Oriole Breeze.</h2>
+
+<p>
+Welcome to his world.
+</p>
+
+<a href="index.html" class="back-home">
+Back to Oriole Breeze
+</a>
+
+</section>
+
+
+</body>
+
+</html>
