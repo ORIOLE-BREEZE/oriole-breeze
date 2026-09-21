@@ -63,12 +63,7 @@ nav a:hover{
     align-items:center;
     text-align:center;
     padding:0 20px;
-
     background-color:#EDE7DA;
-    background-image:url("bobo.png");
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-size:700px auto;
 }
 
 .hero-text{
@@ -77,6 +72,14 @@ nav a:hover{
     position:relative;
     z-index:2;
     transform:translateY(90px);
+}
+
+.hero-bobo{
+    width:700px;
+    height:700px;
+    object-fit:contain;
+    display:block;
+    margin:0 auto -20px;
 }
 
 .hero h1{
@@ -509,8 +512,9 @@ nav a:hover{
         font-size:55px;
     }
 
-    .hero{
-        background-size:500px auto;
+    .hero-bobo{
+        width:500px;
+        height:500px;
     }
 
     .hero p{
