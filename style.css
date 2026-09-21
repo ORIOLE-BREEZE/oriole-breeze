@@ -58,28 +58,30 @@ nav a:hover{
 
 .hero{
     min-height:100vh;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     text-align:center;
+
     padding:0 20px;
+
     background-color:#EDE7DA;
+
+    background-image:url("bobo.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:700px auto;
 }
 
 .hero-text{
     max-width:800px;
-    animation:fade 1.4s ease;
+
     position:relative;
     z-index:2;
-    transform:translateY(90px);
-}
 
-.hero-bobo{
-    width:700px;
-    height:700px;
-    object-fit:contain;
-    display:block;
-    margin:0 auto -20px;
+    animation:fade 1.4s ease;
 }
 
 .hero h1{
@@ -97,12 +99,17 @@ nav a:hover{
 
 .button{
     display:inline-block;
+
     padding:16px 42px;
+
     background:#C8A96A;
     color:white;
+
     border-radius:50px;
+
     text-decoration:none;
     font-weight:600;
+
     transition:.4s;
 }
 
@@ -171,10 +178,13 @@ nav a:hover{
     min-height:520px;
     padding:20px 28px 35px;
     border-radius:20px;
+
     transition:.3s;
+
     display:flex;
     flex-direction:column;
     align-items:center;
+
     text-decoration:none;
     color:inherit;
 }
@@ -186,8 +196,11 @@ nav a:hover{
 .card img{
     width:100%;
     height:220px;
+
     object-fit:cover;
+
     border-radius:12px;
+
     margin-bottom:5px;
 }
 
@@ -204,12 +217,15 @@ nav a:hover{
 .card strong{
     font-size:18px;
     font-weight:600;
+
     white-space:nowrap;
+
     margin-top:auto;
 }
 
 .view-details{
     margin-top:12px;
+
     font-size:14px;
     font-weight:600;
 }
@@ -278,7 +294,9 @@ nav a:hover{
 .upcoming{
     padding:120px 9%;
     background:#EDE7DA;
+
     text-align:center;
+
     scroll-margin-top:90px;
 }
 
@@ -286,25 +304,33 @@ nav a:hover{
     font-family:'Cormorant Garamond',serif;
     font-size:55px;
     font-weight:600;
+
     margin-bottom:60px;
 }
 
 .upcoming-products{
     display:grid;
     grid-template-columns:repeat(3,minmax(0,1fr));
+
     gap:35px;
+
     max-width:1250px;
+
     margin:0 auto;
 }
 
 .upcoming-card{
     min-height:500px;
+
     padding:25px 30px 40px;
+
     border-radius:24px;
+
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:flex-start;
+
     transition:.3s;
 }
 
@@ -315,14 +341,18 @@ nav a:hover{
 .upcoming-card img{
     width:100%;
     height:270px;
+
     object-fit:cover;
+
     border-radius:16px;
+
     margin-bottom:25px;
 }
 
 .upcoming-card h3{
     font-family:'Cormorant Garamond',serif;
     font-size:30px;
+
     margin-bottom:10px;
 }
 
@@ -334,6 +364,7 @@ nav a:hover{
 .upcoming-card strong{
     font-size:18px;
     font-weight:600;
+
     margin-top:auto;
 }
 
@@ -386,8 +417,11 @@ nav a:hover{
 
 .story{
     padding:120px 20%;
+
     background:#F9F6F1;
+
     text-align:center;
+
     scroll-margin-top:90px;
 }
 
@@ -398,24 +432,32 @@ nav a:hover{
 
 .story h2{
     font-family:'Cormorant Garamond',serif;
+
     font-size:60px;
     font-weight:600;
+
     margin-bottom:50px;
 }
 
 .story h3{
     font-family:'Cormorant Garamond',serif;
+
     font-size:30px;
     font-weight:600;
+
     line-height:1.4;
+
     margin:50px 0 25px;
 }
 
 .story p{
     font-family:'Manrope',sans-serif;
+
     font-size:17px;
     line-height:2;
+
     color:#6f5a4b;
+
     margin-bottom:30px;
 }
 
@@ -430,23 +472,31 @@ nav a:hover{
 
 .contact{
     padding:120px 12%;
+
     background:#F9F6F1;
+
     text-align:left;
+
     scroll-margin-top:90px;
 }
 
 .contact h2{
     font-family:'Cormorant Garamond',serif;
+
     font-size:55px;
     font-weight:600;
+
     margin-bottom:20px;
 }
 
 .contact-intro{
     max-width:550px;
+
     font-size:17px;
     line-height:1.8;
+
     color:#6f5a4b;
+
     margin-bottom:45px;
 }
 
@@ -456,21 +506,28 @@ nav a:hover{
 
 .contact-details p{
     margin:8px 0 30px;
+
     font-size:16px;
+
     color:#7b6250;
 }
 
 .contact-details strong{
     display:block;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:25px;
     font-weight:600;
+
     color:#4A3527;
+
     margin-bottom:5px;
 }
 
 .contact-details a{
     color:#5A4030;
+
     text-decoration:underline;
     text-underline-offset:4px;
 }
@@ -508,13 +565,12 @@ nav a:hover{
         padding:18px 5%;
     }
 
-    .hero h1{
-        font-size:55px;
+    .hero{
+        background-size:500px auto;
     }
 
-    .hero-bobo{
-        width:500px;
-        height:500px;
+    .hero h1{
+        font-size:55px;
     }
 
     .hero p{
