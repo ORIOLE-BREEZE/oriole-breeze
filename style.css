@@ -705,5 +705,18 @@ nav a:hover{
     .contact h2{
         font-size:48px;
     }
+    /* =========================
+   RESTORE BOBO SIZE
+========================= */
+
+.hero-bobo{
+    width:360px !important;
+    height:360px !important;
+    max-width:360px !important;
+    max-height:360px !important;
+    object-fit:contain !important;
+    display:block !important;
+    margin:0 auto 20px !important;
+}
 
 }
