@@ -57,7 +57,6 @@ nav a:hover{
 ========================= */
 
 .hero{
-  .hero{
     min-height:100vh;
 
     display:flex;
@@ -66,32 +65,62 @@ nav a:hover{
 
     text-align:center;
 
-    padding:0 20px;
+    padding:100px 20px 70px;
 
-    background-color:#EDE7DA;
-
-    background-image:url("./bobo.png");
-    background-repeat:no-repeat;
-
-    background-position:center 75%;
-
-    background-size:650px auto;
-
-    background-blend-mode:multiply;
+    background:#EDE7DA;
 }
+
+.hero-text{
+    max-width:800px;
+
+    animation:fade 1.4s ease;
+
+    position:relative;
+    z-index:2;
+}
+
+
+/* =========================
+   BOBO
+========================= */
+
+.hero-bobo{
+    width:360px;
+    height:360px;
+
+    object-fit:contain;
+
+    display:block;
+
+    margin:0 auto 20px;
+}
+
+
+/* =========================
+   HOME TEXT
+========================= */
 
 .hero h1{
     font-family:'Cormorant Garamond',serif;
+
     font-size:85px;
     font-weight:600;
+
     margin-bottom:15px;
 }
 
 .hero p{
     font-size:20px;
+
     line-height:1.8;
+
     margin-bottom:45px;
 }
+
+
+/* =========================
+   BUTTON
+========================= */
 
 .button{
     display:inline-block;
@@ -99,11 +128,13 @@ nav a:hover{
     padding:16px 42px;
 
     background:#C8A96A;
+
     color:white;
 
     border-radius:50px;
 
     text-decoration:none;
+
     font-weight:600;
 
     transition:.4s;
@@ -111,6 +142,7 @@ nav a:hover{
 
 .button:hover{
     background:#4A3527;
+
     transform:translateY(-5px);
 }
 
@@ -140,20 +172,27 @@ nav a:hover{
 
 .collection{
     padding:100px 9%;
+
     text-align:center;
+
     background:#F9F6F1;
+
     scroll-margin-top:90px;
 }
 
 .collection h2{
     font-size:42px;
+
     margin-bottom:15px;
+
     font-family:'Cormorant Garamond',serif;
 }
 
 .collection-intro{
     max-width:600px;
+
     margin:auto;
+
     color:#7b6250;
 }
 
@@ -164,24 +203,33 @@ nav a:hover{
 
 .products{
     display:grid;
+
     grid-template-columns:repeat(4,minmax(0,1fr));
+
     gap:20px;
+
     max-width:1400px;
+
     margin:60px auto 0;
 }
 
 .card{
     min-height:520px;
+
     padding:20px 28px 35px;
+
     border-radius:20px;
 
     transition:.3s;
 
     display:flex;
+
     flex-direction:column;
+
     align-items:center;
 
     text-decoration:none;
+
     color:inherit;
 }
 
@@ -191,6 +239,7 @@ nav a:hover{
 
 .card img{
     width:100%;
+
     height:220px;
 
     object-fit:cover;
@@ -202,16 +251,19 @@ nav a:hover{
 
 .card h3{
     margin-top:20px;
+
     font-size:24px;
 }
 
 .card p{
     line-height:1.7;
+
     margin:12px 0 18px;
 }
 
 .card strong{
     font-size:18px;
+
     font-weight:600;
 
     white-space:nowrap;
@@ -223,6 +275,7 @@ nav a:hover{
     margin-top:12px;
 
     font-size:14px;
+
     font-weight:600;
 }
 
@@ -233,6 +286,7 @@ nav a:hover{
 
 .sweet-wisp{
     background:#F3E8D5;
+
     color:#9A7048;
 }
 
@@ -247,6 +301,7 @@ nav a:hover{
 
 .ebony-wind{
     background:#C9B8A6;
+
     color:#5A4030;
 }
 
@@ -261,6 +316,7 @@ nav a:hover{
 
 .dew-fall{
     background:#DDE7E8;
+
     color:#55777C;
 }
 
@@ -275,6 +331,7 @@ nav a:hover{
 
 .jasmine-jay{
     background:#D7E6D2;
+
     color:#587052;
 }
 
@@ -289,6 +346,7 @@ nav a:hover{
 
 .upcoming{
     padding:120px 9%;
+
     background:#EDE7DA;
 
     text-align:center;
@@ -298,7 +356,9 @@ nav a:hover{
 
 .upcoming h2{
     font-family:'Cormorant Garamond',serif;
+
     font-size:55px;
+
     font-weight:600;
 
     margin-bottom:60px;
@@ -306,6 +366,7 @@ nav a:hover{
 
 .upcoming-products{
     display:grid;
+
     grid-template-columns:repeat(3,minmax(0,1fr));
 
     gap:35px;
@@ -323,8 +384,11 @@ nav a:hover{
     border-radius:24px;
 
     display:flex;
+
     flex-direction:column;
+
     align-items:center;
+
     justify-content:flex-start;
 
     transition:.3s;
@@ -336,6 +400,7 @@ nav a:hover{
 
 .upcoming-card img{
     width:100%;
+
     height:270px;
 
     object-fit:cover;
@@ -347,6 +412,7 @@ nav a:hover{
 
 .upcoming-card h3{
     font-family:'Cormorant Garamond',serif;
+
     font-size:30px;
 
     margin-bottom:10px;
@@ -354,11 +420,13 @@ nav a:hover{
 
 .upcoming-card p{
     line-height:1.7;
+
     margin-bottom:15px;
 }
 
 .upcoming-card strong{
     font-size:18px;
+
     font-weight:600;
 
     margin-top:auto;
@@ -371,6 +439,7 @@ nav a:hover{
 
 .petal-show{
     background:#EED9D8;
+
     color:#A35F68;
 }
 
@@ -385,6 +454,7 @@ nav a:hover{
 
 .lilac-lark{
     background:#E4DCEB;
+
     color:#74577F;
 }
 
@@ -399,6 +469,7 @@ nav a:hover{
 
 .rosetta-ember{
     background:#F0D4D2;
+
     color:#8A4F4B;
 }
 
@@ -423,6 +494,7 @@ nav a:hover{
 
 .story-text{
     max-width:800px;
+
     margin:0 auto;
 }
 
@@ -430,6 +502,7 @@ nav a:hover{
     font-family:'Cormorant Garamond',serif;
 
     font-size:60px;
+
     font-weight:600;
 
     margin-bottom:50px;
@@ -439,6 +512,7 @@ nav a:hover{
     font-family:'Cormorant Garamond',serif;
 
     font-size:30px;
+
     font-weight:600;
 
     line-height:1.4;
@@ -450,6 +524,7 @@ nav a:hover{
     font-family:'Manrope',sans-serif;
 
     font-size:17px;
+
     line-height:2;
 
     color:#6f5a4b;
@@ -480,6 +555,7 @@ nav a:hover{
     font-family:'Cormorant Garamond',serif;
 
     font-size:55px;
+
     font-weight:600;
 
     margin-bottom:20px;
@@ -489,6 +565,7 @@ nav a:hover{
     max-width:550px;
 
     font-size:17px;
+
     line-height:1.8;
 
     color:#6f5a4b;
@@ -514,6 +591,7 @@ nav a:hover{
     font-family:'Cormorant Garamond',serif;
 
     font-size:25px;
+
     font-weight:600;
 
     color:#4A3527;
@@ -525,6 +603,7 @@ nav a:hover{
     color:#5A4030;
 
     text-decoration:underline;
+
     text-underline-offset:4px;
 }
 
@@ -554,6 +633,7 @@ nav a:hover{
 
     nav ul{
         gap:15px;
+
         flex-wrap:wrap;
     }
 
@@ -562,7 +642,12 @@ nav a:hover{
     }
 
     .hero{
-        background-size:500px auto;
+        padding:110px 20px 70px;
+    }
+
+    .hero-bobo{
+        width:300px;
+        height:300px;
     }
 
     .hero h1{
