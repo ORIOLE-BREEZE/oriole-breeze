@@ -57,6 +57,7 @@ nav a:hover{
 ========================= */
 
 .hero{
+  .hero{
     min-height:100vh;
 
     display:flex;
@@ -71,17 +72,12 @@ nav a:hover{
 
     background-image:url("./bobo.png");
     background-repeat:no-repeat;
-    background-position:center center;
-    background-size:700px auto;
-}
 
-.hero-text{
-    max-width:800px;
+    background-position:center 75%;
 
-    position:relative;
-    z-index:2;
+    background-size:650px auto;
 
-    animation:fade 1.4s ease;
+    background-blend-mode:multiply;
 }
 
 .hero h1{
