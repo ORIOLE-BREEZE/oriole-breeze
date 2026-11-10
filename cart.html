@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,9 +28,6 @@ background:#F9F6F1;
 color:#4A3527;
 }
 
-
-/* NAVIGATION */
-
 nav{
 width:100%;
 padding:22px 9%;
@@ -52,9 +49,6 @@ color:#4A3527;
 font-weight:600;
 }
 
-
-/* CART */
-
 .cart-page{
 min-height:100vh;
 padding:140px 9% 100px;
@@ -69,9 +63,6 @@ font-weight:600;
 margin-bottom:50px;
 text-align:center;
 }
-
-
-/* CART ITEMS */
 
 .cart-item{
 display:flex;
@@ -122,9 +113,6 @@ min-width:90px;
 text-align:right;
 }
 
-
-/* REMOVE */
-
 .remove{
 border:none;
 background:none;
@@ -137,9 +125,6 @@ font-size:13px;
 .remove:hover{
 color:#4A3527;
 }
-
-
-/* TOTAL */
 
 .cart-summary{
 margin-top:45px;
@@ -157,9 +142,6 @@ margin-bottom:20px;
 .cart-summary strong{
 font-size:26px;
 }
-
-
-/* WHATSAPP BUTTON */
 
 .checkout-button{
 display:inline-block;
@@ -182,9 +164,6 @@ background:#4A3527;
 transform:translateY(-3px);
 }
 
-
-/* EMPTY CART */
-
 .empty-cart{
 text-align:center;
 padding:60px 20px;
@@ -195,9 +174,6 @@ color:#7b6250;
 font-size:18px;
 margin-bottom:25px;
 }
-
-
-/* MOBILE */
 
 @media(max-width:700px){
 
@@ -227,11 +203,7 @@ text-align:center;
 
 </head>
 
-
 <body>
-
-
-<!-- NAVIGATION -->
 
 <nav>
 
@@ -250,9 +222,6 @@ text-align:center;
 </ul>
 
 </nav>
-
-
-<!-- CART -->
 
 <section class="cart-page">
 
@@ -274,7 +243,6 @@ Order on WhatsApp
 
 </section>
 
-
 <script>
 
 function displayCart(){
@@ -286,7 +254,6 @@ let cartItems = document.getElementById("cartItems");
 let cartSummary = document.getElementById("cartSummary");
 
 let cartTotal = document.getElementById("cartTotal");
-
 
 if(cart.length === 0){
 
@@ -308,18 +275,17 @@ return;
 
 }
 
+cartSummary.style.display = "block";
 
 let total = 0;
 
 cartItems.innerHTML = "";
-
 
 cart.forEach((item,index) => {
 
 let itemTotal = item.price * item.quantity;
 
 total += itemTotal;
-
 
 cartItems.innerHTML += `
 
@@ -332,7 +298,6 @@ cartItems.innerHTML += `
 <p>30 mL · ₹${item.price}</p>
 
 </div>
-
 
 <div class="cart-controls">
 
@@ -350,13 +315,9 @@ ${item.quantity}
 
 </div>
 
-
 <div class="cart-price">
-
 ₹${itemTotal}
-
 </div>
-
 
 <button class="remove" onclick="removeItem(${index})">
 Remove
@@ -368,11 +329,9 @@ Remove
 
 });
 
-
 cartTotal.textContent = "₹" + total;
 
 }
-
 
 function changeQuantity(index,amount){
 
@@ -380,20 +339,15 @@ let cart = JSON.parse(localStorage.getItem("orioleCart")) || [];
 
 cart[index].quantity += amount;
 
-
 if(cart[index].quantity <= 0){
-
 cart.splice(index,1);
-
 }
-
 
 localStorage.setItem("orioleCart",JSON.stringify(cart));
 
 displayCart();
 
 }
-
 
 function removeItem(index){
 
@@ -406,7 +360,6 @@ localStorage.setItem("orioleCart",JSON.stringify(cart));
 displayCart();
 
 }
-
 
 /* WHATSAPP ORDER */
 
@@ -424,7 +377,6 @@ let message = "Hi Oriole Breeze! 🐦✨\n\n";
 
 message += "I'd like to place an order:\n\n";
 
-
 cart.forEach(item => {
 
 let itemTotal = item.price * item.quantity;
@@ -435,32 +387,26 @@ message += `${item.name} × ${item.quantity} — ₹${itemTotal}\n`;
 
 });
 
-
 message += `\nTotal: ₹${total}\n\n`;
 
 message += "Name:\n";
 message += "Address:\n";
 message += "Phone:\n";
 
-
-let whatsappNumber = "919619551015";
+let whatsappNumber = "919867315159";
 
 let whatsappURL =
 "https://wa.me/" + whatsappNumber +
 "?text=" + encodeURIComponent(message);
 
-
 window.open(whatsappURL, "_blank");
 
 }
-
 
 displayCart();
 
 </script>
 
-
 </body>
 
 </html>
-```
