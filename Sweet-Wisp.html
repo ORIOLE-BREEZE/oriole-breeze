@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -175,9 +176,7 @@ font-size:55px;
 
 </head>
 
-
 <body>
-
 
 <header>
 
@@ -186,13 +185,9 @@ font-size:55px;
 <ul>
 
 <li><a href="index.html">Home</a></li>
-
 <li><a href="index.html#collection">Collection</a></li>
-
 <li><a href="index.html#upcoming">Upcoming</a></li>
-
 <li><a href="index.html#story">Our Story</a></li>
-
 <li><a href="index.html#contact">Contact</a></li>
 
 </ul>
@@ -201,17 +196,13 @@ font-size:55px;
 
 </header>
 
-
-
 <section class="product-page">
-
 
 <div class="product-image">
 
-<img src="Sweet Wisp.jpg" alt="Sweet Wisp">
+<img src="sweet wisp.jpg" alt="Sweet Wisp">
 
 </div>
-
 
 <div class="product-details">
 
@@ -231,7 +222,6 @@ balanced by soft floral notes and a warm woody finish.
 30 mL · ₹499
 </p>
 
-
 <div class="quantity">
 
 <button onclick="changeQuantity(-1)">−</button>
@@ -242,21 +232,17 @@ balanced by soft floral notes and a warm woody finish.
 
 </div>
 
-
 <button class="button" onclick="addToCart()">
 Add to Cart
 </button>
-
 
 <p class="cart-message" id="cartMessage">
 Added to your cart ♡
 </p>
 
-
 <a href="cart.html" class="order-now">
 Found your fragrance? Order now.
 </a>
-
 
 <a href="index.html#collection" class="back">
 ← Back to Collection
@@ -265,8 +251,6 @@ Found your fragrance? Order now.
 </div>
 
 </section>
-
-
 
 <script>
 
@@ -284,13 +268,11 @@ document.getElementById("quantity").textContent = quantity;
 
 }
 
-
 function addToCart(){
 
 let cart = JSON.parse(localStorage.getItem("orioleCart")) || [];
 
 let existingItem = cart.find(item => item.name === "Sweet Wisp");
-
 
 if(existingItem){
 
@@ -306,7 +288,6 @@ quantity:quantity
 
 }
 
-
 localStorage.setItem("orioleCart",JSON.stringify(cart));
 
 document.getElementById("cartMessage").style.display = "block";
@@ -315,7 +296,5 @@ document.getElementById("cartMessage").style.display = "block";
 
 </script>
 
-
 </body>
-
 </html>
