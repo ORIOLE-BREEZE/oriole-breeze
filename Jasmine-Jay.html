@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -175,9 +176,7 @@ font-size:55px;
 
 </head>
 
-
 <body>
-
 
 <header>
 
@@ -201,17 +200,13 @@ font-size:55px;
 
 </header>
 
-
-
 <section class="product-page">
-
 
 <div class="product-image">
 
-<img src="Jasmine Jay.jpg" alt="Jasmine Jay">
+<img src="jasmine jay.jpg" alt="Jasmine Jay">
 
 </div>
-
 
 <div class="product-details">
 
@@ -232,7 +227,6 @@ that feels graceful, fresh and beautifully balanced.
 30 mL · ₹499
 </p>
 
-
 <div class="quantity">
 
 <button onclick="changeQuantity(-1)">−</button>
@@ -243,21 +237,17 @@ that feels graceful, fresh and beautifully balanced.
 
 </div>
 
-
 <button class="button" onclick="addToCart()">
 Add to Cart
 </button>
-
 
 <p class="cart-message" id="cartMessage">
 Added to your cart ♡
 </p>
 
-
 <a href="cart.html" class="order-now">
 Found your fragrance? Order now.
 </a>
-
 
 <a href="index.html#collection" class="back">
 ← Back to Collection
@@ -266,8 +256,6 @@ Found your fragrance? Order now.
 </div>
 
 </section>
-
-
 
 <script>
 
@@ -285,13 +273,11 @@ document.getElementById("quantity").textContent = quantity;
 
 }
 
-
 function addToCart(){
 
 let cart = JSON.parse(localStorage.getItem("orioleCart")) || [];
 
 let existingItem = cart.find(item => item.name === "Jasmine Jay");
-
 
 if(existingItem){
 
@@ -307,7 +293,6 @@ quantity:quantity
 
 }
 
-
 localStorage.setItem("orioleCart",JSON.stringify(cart));
 
 document.getElementById("cartMessage").style.display = "block";
@@ -315,7 +300,6 @@ document.getElementById("cartMessage").style.display = "block";
 }
 
 </script>
-
 
 </body>
 
