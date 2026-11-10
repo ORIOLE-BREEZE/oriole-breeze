@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -175,9 +176,7 @@ font-size:55px;
 
 </head>
 
-
 <body>
-
 
 <header>
 
@@ -201,17 +200,13 @@ font-size:55px;
 
 </header>
 
-
-
 <section class="product-page">
-
 
 <div class="product-image">
 
-<img src="Ebony Wind.png" alt="Ebony Wind">
+<img src="ebony wind.jpg" alt="Ebony Wind">
 
 </div>
-
 
 <div class="product-details">
 
@@ -231,7 +226,6 @@ leaving behind a warm and beautifully lingering trail.
 30 mL · ₹599
 </p>
 
-
 <div class="quantity">
 
 <button onclick="changeQuantity(-1)">−</button>
@@ -242,21 +236,17 @@ leaving behind a warm and beautifully lingering trail.
 
 </div>
 
-
 <button class="button" onclick="addToCart()">
 Add to Cart
 </button>
-
 
 <p class="cart-message" id="cartMessage">
 Added to your cart ♡
 </p>
 
-
 <a href="cart.html" class="order-now">
 Found your fragrance? Order now.
 </a>
-
 
 <a href="index.html#collection" class="back">
 ← Back to Collection
@@ -265,8 +255,6 @@ Found your fragrance? Order now.
 </div>
 
 </section>
-
-
 
 <script>
 
@@ -284,13 +272,11 @@ document.getElementById("quantity").textContent = quantity;
 
 }
 
-
 function addToCart(){
 
 let cart = JSON.parse(localStorage.getItem("orioleCart")) || [];
 
 let existingItem = cart.find(item => item.name === "Ebony Wind");
-
 
 if(existingItem){
 
@@ -306,7 +292,6 @@ quantity:quantity
 
 }
 
-
 localStorage.setItem("orioleCart",JSON.stringify(cart));
 
 document.getElementById("cartMessage").style.display = "block";
@@ -314,7 +299,6 @@ document.getElementById("cartMessage").style.display = "block";
 }
 
 </script>
-
 
 </body>
 
